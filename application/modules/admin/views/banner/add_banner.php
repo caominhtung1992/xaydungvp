@@ -1,0 +1,61 @@
+<div class="paddings">
+  <div id="action-links">
+    <ul>
+      <li id="add-prod"><a href="<?php echo base_url(); ?>admin/banner/add">Thêm banner mới</a></li>
+      <li id="add-prod"><a href="<?php echo base_url(); ?>admin/banner">Danh sách banner</a></li>
+    </ul>
+  </div>
+  <div style="text-align:center;color:#f00;text-align:left"><?php if(isset($error)) { echo "<p>".$error."</p>"; } ?></div>
+  <form method="post" enctype="multipart/form-data" action="<?php echo base_url(); ?>admin/banner/add">
+    <style type="text/css">
+.hide-section { display:none}
+.hide-row { display:none}
+</style>
+    <table border="1" bordercolor="#CCCCCC" style="border-collapse:collapse; width:100%" id="tb_padding">
+      <tbody>
+        <tr style="background:#fff !important;color:#6e6f70">
+          <td>Vị trí quảng cáo</td>
+          <td><select name="locationId">
+              <option>--Chọn vị trí--</option>
+              <?php
+			  	if(isset($list_location) && !empty($list_location)){
+					foreach($list_location as $location){
+						echo '<option value="'.$location['location_id'].'">&nbsp;- '.$location['location_name'].'</option>';
+					}
+				}
+              ?>
+            </select>
+            (<a href="<?php echo base_url(); ?>admin/banner/location">Quản lý vị trí</a>) <a class="short_tooltip" href="#"><img src="<?php echo base_url(); ?>public/admin/images/about.png" width="16" height="16" alt=""><span class="tooltip_classic">Tùy vào cài đặt banner ở các vị trí khác nhau, bạn cần chọn vị trí mà banner này sẽ hiển thị.</span></a></td>
+        </tr>
+        
+        <tr>
+          <td>Đặt tên banner để theo dõi</td>
+          <td><input type="text" name="slide_name" value="" size="50">
+            <a class="short_tooltip" href="#"><img src="<?php echo base_url(); ?>public/admin/images/about.png" width="16" height="16" alt=""><span class="tooltip_classic">Nếu bạn có nhiều banner và muốn thay đổi, theo dõi, bạn nên đặt tên cụ thể <br />
+            v.d. Banner quảng cáo khuyến mại 8/3/2012.</span></a></td>
+        </tr>
+        <tr>
+          <td>File banner</td>
+          <td> Upload từ máy tính <br />
+            <input type="file" name="media_file_1" size="40">
+            <a class="short_tooltip" href="#"><img src="<?php echo base_url(); ?>public/admin/images/about.png" width="16" height="16" alt=""><span class="tooltip_classic">Tìm file trong máy tính của bạn và tải lên. Dung lượng file tối đa là 400KB. Loại file Ảnh (.jpg, .gif, .png) hoặc Flash (.swf)</span></a>
+            <input type="hidden" name="current_file" value="">
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight:bold; color:#F00">Địa chỉ URL đích</td>
+          <td><input type="text" name="desUrl" value="" size="50">
+            <a class="short_tooltip" href="#"><img src="<?php echo base_url(); ?>public/admin/images/about.png" width="16" height="16" alt=""><span class="tooltip_classic">Địa chỉ trang web sau khi người dùng click vào banner.</span></a></td>
+        </tr>
+        
+        
+      </tbody>
+    </table>
+    <br />
+    <div class="group-actions">
+      <input class="btn" id="submit-collection-btn" name="ok" type="submit" value="Tạo mới >>">
+      hoặc <a href="<?php echo base_url(); ?>admin/banner">Hủy bỏ</a> </div>
+    <!-- .group-actions -->
+  </form>
+  
+</div>

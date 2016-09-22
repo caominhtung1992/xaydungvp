@@ -1,0 +1,41 @@
+/*------------------------------------*/
+/* Created by : Nguyễn Xuân Bách      */
+/* Phone      : 0976.256.106          */
+/* Mail       : Bachnx92@gmail.com    */
+/* Skype      : Northstar.vn          */
+/* Yahoo      : Bachnx92              */
+/* Website    : http://northstar.vn/  */
+/* -----------------------------------*/
+
+#tabMenuDm{ float:left; width:100%;}
+#tabMenuDm ul{ margin:0; padding:0; font-size:12px;font-weight: bold;}
+#tabMenuDm li{display:inline; margin:0; }
+#tabMenuDm .first_{float:left; /* background:url(../images/menu_pro_detail_left_.jpg) left top no-repeat; */ padding: 0 7px; text-decoration:none}
+#tabMenuDm .first_ span{/* background:url(../images/menu_pro_detail_right_.jpg) right top no-repeat; */ display:block; /* padding:9px 16px 8px 5px; */color:#ffffff; text-decoration:none; padding: 0px 10px;height: 28px;line-height: 28px;}
+#tabMenuDm .first_ span{float:none}
+#tabMenuDm .first_:hover{background-position:0% -32px}
+#tabMenuDm .first_:hover span{background-position:100% -32px; color:#000000; text-decoration:none;}
+#tabMenuDm .curent a{background:url(../images/bg_active.png) repeat-x; color:#000;}
+#tabMenuDm .curent a span{background-position:100% -32px; color:#000000;  text-decoration:none; }
+#tabMenuDm .bgg{ float:left; background:url(../images/submenu_bg.png) repeat-x; height: 33px; background-size: contain; width:100%; border-left:0px solid #b1b1b1;border-right:0px solid #b1b1b1; }
+.h_menu_content li{background:url(../images/bg_menu_sub.png) repeat-x;margin: 0px 1px !important;-webkit-border-radius: 4px 4px 0px 0px;margin-top: 3px !important;}
+.h_menu_content li:hover, .menu_active{background:url(../images/bg_active.png) repeat-x !important; color:#000 !important;}
+#tabMenuDm .menu_active .first_ span{color:#000 !important;}
+#tabMenuDm .hover_active a{ background-position:0% -32px}
+#tabMenuDm .hover_active a span{background-position:100% -32px;color:#000000;}
+.tabMenuDmL{width: 74px;height: 36px;background-position: -146px -128px;}
+.tabMenuDmR{width: 12px;height: 36px;background-position: -236px -128px;}
+.h_menu_item{padding:0;margin:0;position:relative;}
+.h_menu_sub_public{width: 160px;border-left: 1px solid #a5a5a5;border-right: 1px solid #a5a5a5;border-bottom: 1px solid #a5a5a5;position: absolute;top: 28px;z-index: 999999;line-height: 16px;background: #f4f4f4 ;display: none;padding: 0px 0;box-shadow: 5px 5px 5px #CCCCCC;line-height: 22px;}
+.h_menu_sub_public p{display: block;line-height: 30px;margin: 0;padding: 0;}
+.h_menu_sub_public a{/*display: block;*/color: #000100;text-decoration: none;font-weight: 100;}
+.h_menu_sub_public span{display: inline;}
+.h_menu_sub_public .a_root img{width: 20px;margin-top: 6px;}
+.h_menu_sub_public .a_root{border-bottom: 1px solid #cccccc;padding-left: 5px;}
+.h_menu_sub_public .a_root:hover{background-color: #dcdcdc;display: block;}
+.h_menu_sub_public .a_root a{color: #000100;/* margin-bottom: 5px; *//* margin-top: 5px; */text-transform: none;display: block;}
+.h_menu_sub_public .a_root a:hover{}
+.h_menu_sub_public .a_child{padding-left: 20px;}
+.h_menu_sub_public .a_child span{float: left;display: block;width: 10px;}
+.h_menu_sub_public .a_child  a{float: left;width: 125px;text-transform: none;}
+.h_menu_sub_public a:hover{font-weight: bold;}

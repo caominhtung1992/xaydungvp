@@ -1,0 +1,5 @@
+# robots.txt generated at httpwww.mcanerin.com
+User-agent 
+Disallow 
+Disallow cgi-bin
+Sitemap httpxaydungvinhphuc.comsitemap.xml.gz
